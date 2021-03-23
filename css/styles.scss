@@ -1,0 +1,51 @@
+/* for cellular / small screen devices */
+@media screen and ( max-width: 800px ) {
+	.logo-drop-button {
+		background-color: yellow;
+	}
+	.logo {
+		display: none;
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+	}
+	.show {
+		display: block;
+	}
+}
+
+/* for desktop / large tablet devices */	
+@media screen and ( min-width: 801px ) {
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	.logo-drop-button {
+		display: none;
+	}
+	.logo {
+		justify-content: center;
+		padding: 5px;
+	}
+	.dropdown {
+		/* empty ? */
+	}
+	.dropdown-content {
+		display: flex;
+		flex-direction: row;
+		background-color: blue;
+		color: red;
+	}
+	.dropdown-content_element {
+		padding: 5px;
+		color: orange;
+		background-color: yellow;
+		justify-content: center;
+	}
+}
+
